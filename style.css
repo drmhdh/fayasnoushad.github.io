@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: #CCCCCC;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 25%,
+            transparent 100%,
+            rgba(0, 0, 0, 1) 75%,
+            transparent)
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #22272d;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    background: #283647;
+    z-index: 9999;
+    position: absolute;
+    padding: 30px;
+}
+
+header .hover a {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    margin: 30px;
+    transition: color 1s;
+}
+
+.hover a {
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #000;
+    padding: 7px;
+}
+
+.hover a:hover {
+    box-shadow: 0 0 10px 0 #fff inset, 0 0 20px 2px #000;
+    border: 3px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 35px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+}
+
+h4 {
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+a {
+    color: #02a9f4;
+}
+
+/* sections */
+
+section {
+    font-family: "Poppins";
+    text-align: center;
+    margin: 50px 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+section h3 {
+    font-size: 2rem;
+}
+
+/*contributed b aryan */
+.zoom-effect1 {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.zoom-effect1:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-width: 2px;
+    padding: 20px;
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #fff;
+}
+
+.content-table table,
+th,
+td {
+    border: 3px solid white;
+}
+
+/* CSS for scroll to top button */
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #283647;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop:active {
+    background: #22272d;
+}
